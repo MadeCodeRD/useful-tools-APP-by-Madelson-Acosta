@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Nova+Square&family=Paprika&family=Shadows+Into+Light&display=swap&family=Caveat&display=swap&family=Long+Cang&display=swap');
+
+/* Base reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* box-sizing and font sizing */
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+/*1rem = 10px, 62.5% = 10px*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+
+}
+
+body {
+    background: linear-gradient(to right top, #1ecbe1, #29c0da, #33b4d2, #3ca9ca, #439ec0) fixed;
+    background-color: turquoise;
+}
+
+textarea {
+    resize: none;
+}
+
+
+/*This is from 0px to 768px */
+
+header {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    margin: 3.5rem 0 3.5rem 0;
+    font-family: "Shadows Into Light", monospace, Courier, 'Courier New';
+    color: rgb(240, 240, 240);
+    font-size: 1.2rem;
+}
+
+header h1 img {
+    max-width: 2rem;
+
+}
+
+.collapsible {
+    margin: 1.5rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 10rem;
+    font-weight: bolder;
+    width: 80vw;
+    border-radius: 20px;
+    font-style: italic;
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    text-align: left;
+}
+
+.collapsible:hover {
+    background-color: #555;
+}
+
+.arrow-span {
+    padding: 1rem;
+    font-size: 2.5rem;
+    pointer-events: none;
+
+}
+
+.container {
+
+    height: 0;
+    overflow: hidden;
+    transition: height .7s ease-in-out;
+
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: "Annie Use Your Telescope", monospace, Courier, 'Courier New';
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-underline-position: under;
+    color: #c24434;
+}
+
+.texto {
+    font-size: 1.5rem;
+    margin: 0 1.2rem 3rem 1.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(43, 42, 42);
+    text-shadow: 1px 1px 10px red;
+}
+
+a.reference {
+    color: white;
+}
+
+a.reference:hover {
+    color: rgb(192, 32, 32);
+}
+
+i.icons {
+
+    color: #92e11e;
+}
+
+.form_label {
+    font-size: 2rem;
+    text-align: center;
+    display: block;
+    text-decoration: underline;
+    text-decoration-color: white;
+    margin-bottom: 3rem;
+    font-size: 2.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(34, 36, 34);
+
+}
+
+
+
+.inputs-area {
+    width: 85vw;
+    border-radius: 1rem;
+    border: 2px solid black;
+    margin: 0 1.5rem 3rem 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    outline: none;
+}
+
+button[type="submit"] {
+    outline: none;
+    display: block;
+    margin: 0 auto 3rem auto;
+    width: 50%;
+    padding: 2rem;
+    border-radius: 15px;
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family: Caveat, monospace, Courier, 'Courier New';
+    color: white;
+    background-color: #f4511e;
+    transition: background-color 1s, border-radius 1s;
+}
+
+button[type="submit"]:hover {
+    background-color: violet;
+    border-radius: 1rem 7rem 1rem 7rem;
+    color: red
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thump {
+    display: none;
+    position: relative;
+    bottom: 30rem;
+}
+
+#cipher-image {
+    display: none;
+    position: relative;
+    bottom: 30rem;
+}
+
+.inputs-text {
+    display: block;
+    margin: 0 auto 3rem auto;
+    width: 85%;
+    font-size: 2rem;
+    padding: 1rem;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-weight: 800;
+
+}
+
+#roman-canvas {
+
+    width: 300px;
+    height: 300px;
+    margin-bottom: 5rem;
+}
+
+#roman-canvas2 {
+    display: none;
+
+    width: 300px;
+    height: 300px;
+    margin-bottom: 5rem;
+}
+
+#final {
+    margin: 4rem 2rem 8rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 1.8rem;
+    color: white;
+
+
+}
+
+.active {
+    background-color: #555;
+}
+
+.CipherText {
+    display: none;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    height: 30rem;
+    font-size: 2rem;
+    word-break: break-all;
+    overflow: auto;
+    border-radius: 30px;
+    width: 90%;
+
+
+}
+
+.close {
+    font-size: 5rem;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+
+
+/*This is from 768px to 992px */
+@media(min-width: 768px) {
+    header {
+        font-size: 2.7rem;
+    }
+
+    header h1 img {
+        max-width: 50rem;
+    }
+
+    .collapsible {
+        font-size: 2.6rem;
+    }
+
+    .arrow-span {
+        font-size: 3.6rem;
+    }
+
+    .title {
+        font-size: 5rem;
+    }
+
+    .texto {
+        font-size: 2.5rem;
+    }
+
+    .form_label {
+        font-size: 3rem;
+
+    }
+
+    i.icons {
+        font-size: 4rem;
+    }
+
+    .inputs-area {
+        font-size: 3.7rem;
+        width: 90vw;
+    }
+
+    .inputs-text {
+        width: 50vw;
+        padding: 2.5rem;
+    }
+
+    button[type="submit"] {
+        font-size: 4rem;
+        border-radius: 25px;
+    }
+
+    #final {
+        font-size: 4rem;
+        padding-top: 20rem;
+        padding-bottom: 10rem;
+    }
+
+
+}
+
+@media (min-width:992px) {
+    .inputs-text {
+        width: 50rem;
+        padding: 2.5rem;
+    }
+
+    .texto {
+        text-align: center;
+        margin: 0 2.5rem 3rem 2rem;
+
+    }
+}
+
+@media(min-width:1200px) {
+    .inputs-area {
+        display: block;
+        margin: 0 auto 0 auto;
+        margin-bottom: 5rem;
+
+    }
+}
